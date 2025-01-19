@@ -1,0 +1,214 @@
+/* src/style.css */
+
+body,
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  color: #252f43;
+  font-family: Quicksand, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.3714285714285714rem;
+  line-height: 1.5;
+  background-color: rgb(238, 238, 238);
+}
+
+body.page {
+  overflow: hidden;
+}
+.header {
+  color: #0082bb;
+  padding: 0px 45px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, "Helvetica Neue", Helvetica, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1em;
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+.header .header-content {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: inline-flex;
+  margin-right: 10px;
+  color: #4896c6;
+}
+
+.header .header-content.content-1 a {
+  padding: 5px 15px;
+  border: 1px solid #4896c6;
+  text-decoration: none;
+  font-weight: 500;
+}
+.header .header-content.content-2 a {
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0px 5px;
+}
+
+.header .site-title-sub {
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0;
+}
+.content {
+  background: #ffffff;
+  border: 0;
+  padding: 20px;
+  margin: 15px;
+}
+
+.help-container {
+  margin: 0;
+}
+.help {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 18px;
+  color: #0082bb;
+  font-weight: 900;
+}
+.form-label {
+  font-size: 15px;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: rgb(102, 102, 102);
+}
+
+.form-label.form-action {
+  font-size: 12px;
+}
+
+.form-label .form-action a {
+  font-size: 12px;
+  color: #0082bb;
+}
+.form-control {
+  width: 100%;
+  height: 40px;
+  display: inline;
+  background-color: transparent;
+  padding-left: 5px;
+  font-size: 18px;
+  color: rgb(102, 102, 102);
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(102, 102, 102);
+  border-image: initial;
+  border-radius: 0px;
+  margin: 0px auto;
+}
+
+.form-btn {
+  font-size: 21px;
+  display: inline-block;
+  height: 52px;
+  min-width: 210px;
+  max-width: 510px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0px;
+  margin: 15px 0px 20px;
+  border: 1px solid #333333;
+  color: #333333;
+  background-color: rgb(238 238 238);
+}
+
+.form-btn:hover {
+  border: 1px solid #333333;
+  color: #333333;
+  background-color: rgb(238 238 238);
+  border-color: #333333;
+}
+
+.form-btn.disabled {
+  background-color: rgb(235, 235, 235);
+  color: rgb(204, 204, 204);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(216, 216, 216);
+  border-image: initial;
+}
+.forgot-password.form-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #7d7d7d;
+}
+.section-wrapper {
+  position: relative;
+  padding-right: 85px;
+}
+.section-wrapper .floating-element {
+  position: absolute;
+  top: 7px;
+  right: 0pt;
+  width: 0pt;
+  border-right: 100px solid rgb(0, 102, 164);
+  border-bottom: 100px solid transparent;
+  border-top: 100px solid transparent;
+}
+.section-wrapper .section-content {
+  position: relative;
+  z-index: 1;
+  line-height: 20px;
+  margin-left: 8px;
+}
+.section-content h3 {
+  font-size: 15px;
+  line-height: 1.2em;
+  margin-bottom: 0.285em;
+  color: #212121;
+}
+.section-content ul {
+  margin-left: 0;
+}
+
+.section-content ul li {
+  line-height: 28px;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.8;
+  color: #515151;
+}
+
+footer {
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  bottom: 0px;
+  max-height: 200px;
+  width: 100%;
+  background-color: rgb(51, 51, 51);
+  margin: 0px auto;
+  border-top: 1px solid rgb(218, 218, 218);
+  color: #ebebeb;
+}
+footer .footer-links a {
+  color: #ebebeb;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .right-content {
+    border-right: 1px solid #8c8c8c;
+    padding-right: 20px;
+  }
+  .content {
+    max-width: 800px;
+  }
+}
